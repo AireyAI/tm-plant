@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TM Plant | Machinery Service &amp; Repair Centre, Carlisle &amp; Cumbria</title>
+<meta name="description" content="TM Plant is Cumbria's machinery service and repair centre in Carlisle. Servicing, repairs, collection and delivery, and sales for lawn mowers, chainsaws, strimmers and compact plant. 100% recommended. Call 07506 856080." />
+<meta name="theme-color" content="#0C6E7D" />
+<link rel="canonical" href="https://www.tmplant.co.uk/" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TM Plant" />
+<meta property="og:title" content="TM Plant | Machinery Service &amp; Repair Centre, Carlisle" />
+<meta property="og:description" content="Cumbria's machinery service, repair and sales centre. Garden and building machinery sorted, with free local collection. Call 07506 856080." />
+<meta property="og:url" content="https://www.tmplant.co.uk/" />
+<meta property="og:image" content="og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="TM Plant, Cumbria's machinery service and repair centre" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="TM Plant | Machinery Service &amp; Repair, Carlisle" />
+<meta name="twitter:description" content="Cumbria's machinery service, repair and sales centre. Call 07506 856080." />
+<meta name="twitter:image" content="og-image.jpg" />
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://unpkg.com" crossorigin />
+<!-- Self-hosted brand fonts; preload the hero display font for a fast LCP -->
+<link rel="preload" href="fonts/sora.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="tokens.css" />
+<!-- Icon fonts loaded non-render-blocking so first paint is instant -->
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" media="print" onload="this.media='all'" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" media="print" onload="this.media='all'" />
+<noscript>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</noscript>
+<script>
+  /* Hide reveal elements up front ONLY if we will animate them.
+     If GSAP fails to load, a load-time failsafe below un-hides everything. */
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('anim');
+  }
+</script>
+
+<!-- JSON-LD LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "TM Plant",
+  "description": "Machinery service, repair and sales centre for garden and building equipment in Carlisle and across Cumbria.",
+  "telephone": "+447506856080",
+  "email": "tmplantservice@gmail.com",
+  "url": "https://www.tmplant.co.uk/",
+  "image": "og-image.jpg",
+  "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 6 Thomas Street, Denton Holme",
+    "addressLocality": "Carlisle",
+    "addressRegion": "Cumbria",
+    "postalCode": "CA2 5DZ",
+    "addressCountry": "GB"
+  },
+  "areaServed": ["Carlisle", "Dalston", "Penrith", "Keswick", "Alston", "Cumbria"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "6"
+  }
+}
+</script>
+
+<style>
+  /* ── Self-hosted variable brand fonts ─────────────────── */
+  @font-face { font-family: "Sora"; src: url("fonts/sora.woff2") format("woff2"); font-weight: 100 800; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Figtree"; src: url("fonts/figtree.woff2") format("woff2"); font-weight: 300 900; font-style: normal; font-display: swap; }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    font-family: "Figtree", system-ui, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.7;
+    color: var(--color-text);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: "Sora", system-ui, sans-serif; color: var(--color-ink); line-height: 1.05; margin: 0; letter-spacing: -0.03em; font-weight: 700; }
+  p { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  ::selection { background: var(--color-accent); color: #fff; }
+  :focus-visible { outline: 3px solid var(--color-primary-light); outline-offset: 3px; border-radius: 4px; }
+
+  .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: clamp(1.1rem, 4vw, 2rem); }
+  .eyebrow { font-family: "Sora", sans-serif; font-size: var(--fs-eyebrow); font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-primary); display: inline-flex; align-items: center; gap: .5rem; }
+  .eyebrow::before { content: ""; width: 26px; height: 2px; background: var(--color-accent); border-radius: 2px; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--color-ink); color: #fff; padding: .7rem 1.1rem; border-radius: var(--radius-sm); z-index: 200; }
+  .skip:focus { left: 12px; top: 12px; }
+
+  /* ── Buttons ─────────────────────────────────────────── */
+  .btn { display: inline-flex; align-items: center; gap: .55rem; font-family: "Sora", sans-serif; font-weight: 600; font-size: .98rem; padding: .85rem 1.5rem; border-radius: var(--radius-full); border: 1px solid transparent; cursor: pointer; transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .2s; white-space: nowrap; will-change: transform; }
+  .btn i { font-size: 1.15em; }
+  .btn-primary { background: var(--color-cta); color: #fff; box-shadow: var(--shadow-accent); }
+  .btn-primary:hover { background: var(--color-cta-dark); transform: translateY(-2px); box-shadow: 0 14px 34px rgba(46,122,51,.36); }
+  .btn-primary:active { transform: translateY(0) scale(.98); }
+  .btn-ghost { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.35); }
+  .btn-ghost:hover { background: rgba(255,255,255,.16); transform: translateY(-2px); }
+  .btn-ghost:active { transform: translateY(0) scale(.98); }
+  .btn-outline { background: transparent; color: var(--color-primary-dark); border-color: var(--color-line); }
+  .btn-outline:hover { border-color: var(--color-primary); background: var(--color-surface); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+
+  /* ── Nav ─────────────────────────────────────────────── */
+  header.nav { position: fixed; inset: 0 0 auto 0; height: var(--nav-h); z-index: 100; display: flex; align-items: center; transition: background .3s, box-shadow .3s, border-color .3s; border-bottom: 1px solid transparent; }
+  header.nav.scrolled { background: rgba(245,249,250,.82); backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px); border-bottom-color: var(--color-line); box-shadow: 0 2px 20px rgba(10,39,49,.05); }
+  .nav-inner { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: clamp(1.1rem, 4vw, 2rem); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .brand { display: flex; align-items: center; gap: .6rem; font-family: "Sora", sans-serif; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.03em; color: var(--color-ink); }
+  .brand .mark { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: #fff; background: linear-gradient(150deg, var(--color-primary-light), var(--color-primary-dark)); box-shadow: var(--shadow-sm); font-size: 1.1rem; }
+  .brand .mark i { transform: translateY(1px); }
+  .brand b { color: var(--color-accent); font-weight: 800; }
+  .nav-links { display: flex; align-items: center; gap: 1.7rem; }
+  .nav-links a { font-size: .95rem; font-weight: 500; color: var(--color-text); transition: color .2s; }
+  .nav-links a:hover { color: var(--color-primary); }
+  .nav-cta { display: flex; align-items: center; gap: .8rem; }
+  .nav-phone { display: inline-flex; align-items: center; gap: .45rem; font-family: "Sora", sans-serif; font-weight: 600; font-size: .95rem; color: var(--color-ink); }
+  .nav-phone i { color: var(--color-accent); }
+  .nav-toggle { display: none; background: none; border: 1px solid var(--color-line); border-radius: 10px; width: 44px; height: 44px; font-size: 1.4rem; color: var(--color-ink); cursor: pointer; }
+
+  /* ── Hero ────────────────────────────────────────────── */
+  .hero { position: relative; min-height: 100dvh; display: flex; align-items: center; padding-top: calc(var(--nav-h) + 2.4rem); padding-bottom: var(--space-8); overflow: hidden; color: #fff; isolation: isolate; }
+  .hero-bg { position: absolute; inset: 0; z-index: -3; background:
+      radial-gradient(120% 90% at 78% 12%, #17a0a8 0%, transparent 55%),
+      radial-gradient(90% 80% at 12% 92%, #0a3f49 0%, transparent 60%),
+      linear-gradient(158deg, #0d5c69 0%, #08323b 62%, #061f26 100%); }
+  .hero-photo { position: absolute; inset: 0; z-index: -2; object-fit: cover; width: 100%; height: 100%; opacity: .17; mix-blend-mode: luminosity; }
+  .hero-topo { position: absolute; inset: 0; z-index: -1; opacity: .5; pointer-events: none; }
+  .hero-grid { display: grid; grid-template-columns: 1.22fr .78fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; width: 100%; }
+  .hero .eyebrow { color: #7fe0c9; }
+  .hero .eyebrow::before { background: var(--color-accent); }
+  .hero h1 { color: #fff; font-size: clamp(2.5rem, 1.5rem + 3.6vw, 4.4rem); font-weight: 800; margin: 1.1rem 0 0; }
+  .hero h1 .grn { color: #8fe07f; }
+  .hero-sub { margin-top: 1.3rem; font-size: 1.18rem; line-height: 1.6; color: rgba(255,255,255,.86); max-width: 33ch; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 2rem; }
+  .hero-chips { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; margin-top: 2.2rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,.16); }
+  .hero-chip { display: inline-flex; align-items: center; gap: .5rem; font-size: .92rem; color: rgba(255,255,255,.9); }
+  .hero-chip i { color: #8fe07f; font-size: 1.2rem; }
+
+  /* hero glass card */
+  .hero-card { position: relative; border-radius: var(--radius-lg); padding: 1.7rem; background: linear-gradient(150deg, rgba(255,255,255,.15), rgba(255,255,255,.05)); border: 1px solid rgba(255,255,255,.25); backdrop-filter: blur(16px) saturate(160%); -webkit-backdrop-filter: blur(16px) saturate(160%); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 24px 60px rgba(0,0,0,.3); }
+  .hero-card h3 { color: #fff; font-size: 1.15rem; display: flex; align-items: center; gap: .6rem; }
+  .hero-card h3 i { color: #8fe07f; }
+  .hc-list { list-style: none; padding: 0; margin: 1.1rem 0 0; display: grid; gap: .85rem; }
+  .hc-list li { display: flex; align-items: flex-start; gap: .7rem; font-size: .97rem; color: rgba(255,255,255,.92); line-height: 1.4; }
+  .hc-list li i { color: #8fe07f; margin-top: .12rem; flex: none; }
+  .hc-foot { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.18); display: flex; align-items: center; gap: .7rem; }
+  .hc-stars { color: #ffd257; font-size: 1rem; letter-spacing: 1px; }
+  .hc-foot span { font-size: .88rem; color: rgba(255,255,255,.8); }
+
+  /* ── Trust strip ─────────────────────────────────────── */
+  .strip { background: var(--color-surface); border-bottom: 1px solid var(--color-line); }
+  .strip-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; padding-block: 1.3rem; }
+  .strip-item { display: inline-flex; align-items: center; gap: .6rem; font-family: "Sora", sans-serif; font-weight: 500; font-size: .95rem; color: var(--color-ink); }
+  .strip-item i { color: var(--color-accent); font-size: 1.3rem; }
+
+  /* ── Section shell ───────────────────────────────────── */
+  section { position: relative; }
+  .sec { padding-block: clamp(4rem, 8vw, 7rem); }
+  .sec-head { max-width: 40rem; margin-bottom: 3rem; }
+  .sec-head.center { margin-inline: auto; text-align: center; }
+  .sec-head h2 { font-size: var(--fs-h2); margin-top: 1rem; }
+  .sec-head p { margin-top: 1rem; color: var(--color-muted); font-size: 1.1rem; }
+
+  /* ── Services (asymmetric bento) ─────────────────────── */
+  .svc-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.1rem; }
+  .card { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-md); padding: 1.7rem; transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s; will-change: transform; }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+  .card .ico { width: 52px; height: 52px; border-radius: 13px; display: grid; place-items: center; font-size: 1.55rem; margin-bottom: 1.1rem; }
+  .ico.teal { background: rgba(12,110,125,.1); color: var(--color-primary); }
+  .ico.green { background: rgba(74,158,63,.12); color: var(--color-accent-dark); }
+  .card h3 { font-size: var(--fs-h3); }
+  .card p { margin-top: .55rem; color: var(--color-muted); font-size: 1rem; }
+  .svc-feature { grid-column: span 3; display: flex; flex-direction: column; justify-content: space-between; color: #fff; background:
+      radial-gradient(120% 120% at 85% 10%, #1a9aa2 0%, transparent 55%),
+      linear-gradient(155deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); border: none; }
+  .svc-feature h3, .svc-feature .ico { color: #fff; }
+  .svc-feature .ico { background: rgba(255,255,255,.16); }
+  .svc-feature p { color: rgba(255,255,255,.85); }
+  .svc-span3 { grid-column: span 3; }
+  .svc-span2 { grid-column: span 2; }
+
+  /* ── Machinery categories ────────────────────────────── */
+  .mach-band { background: var(--color-surface); border-block: 1px solid var(--color-line); }
+  .mach-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: .9rem; }
+  .mach { display: flex; flex-direction: column; gap: .8rem; align-items: flex-start; padding: 1.3rem; border-radius: var(--radius-md); background: var(--color-bg); border: 1px solid var(--color-line); transition: transform .3s var(--ease), background .3s, color .3s; }
+  .mach:hover { transform: translateY(-4px); background: var(--color-ink); color: #fff; border-color: transparent; box-shadow: var(--shadow-md); }
+  .mach:hover .m-ico { color: #8fe07f; }
+  .mach:hover small { color: rgba(255,255,255,.7); }
+  .m-ico { font-size: 1.9rem; color: var(--color-primary); transition: color .3s; }
+  .mach strong { font-family: "Sora", sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; }
+  .mach small { color: var(--color-muted); font-size: .84rem; line-height: 1.35; }
+
+  /* ── Process ─────────────────────────────────────────── */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; counter-reset: step; }
+  .step { position: relative; padding: 1.8rem 1.5rem; border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-line); }
+  .step .num { font-family: "Sora", sans-serif; font-weight: 800; font-size: 2.4rem; letter-spacing: -0.05em; color: var(--color-primary-light); opacity: .45; line-height: 1; }
+  .step h3 { font-size: 1.15rem; margin-top: .7rem; }
+  .step p { margin-top: .5rem; color: var(--color-muted); font-size: .96rem; }
+  .step .s-ico { position: absolute; top: 1.7rem; right: 1.5rem; font-size: 1.5rem; color: var(--color-accent); }
+
+  /* ── Why us (split + stats) ──────────────────────────── */
+  .why { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  .why-list { list-style: none; padding: 0; margin: 1.8rem 0 0; display: grid; gap: 1.1rem; }
+  .why-list li { display: flex; gap: .9rem; align-items: flex-start; }
+  .why-list .wi { flex: none; width: 40px; height: 40px; border-radius: 11px; background: rgba(74,158,63,.12); color: var(--color-accent-dark); display: grid; place-items: center; font-size: 1.2rem; }
+  .why-list h4 { font-size: 1.05rem; }
+  .why-list p { color: var(--color-muted); font-size: .97rem; margin-top: .2rem; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat { padding: 1.6rem; border-radius: var(--radius-md); background: var(--color-surface); border: 1px solid var(--color-line); text-align: left; }
+  .stat .n { font-family: "Sora", sans-serif; font-weight: 800; font-size: clamp(2rem, 4vw, 2.9rem); letter-spacing: -0.04em; color: var(--color-primary); line-height: 1; }
+  .stat .n b { color: var(--color-accent); font-weight: 800; }
+  .stat .l { margin-top: .5rem; font-size: .92rem; color: var(--color-muted); }
+  .stat.dark { background: var(--color-ink); color: #fff; }
+  .stat.dark .l { color: rgba(255,255,255,.72); }
+  .stat.dark .n { color: #8fe07f; }
+
+  /* ── Proof band ──────────────────────────────────────── */
+  .proof { background:
+      radial-gradient(100% 140% at 90% 0%, #14808c 0%, transparent 55%),
+      linear-gradient(150deg, var(--color-primary-dark), var(--color-ink-2)); color: #fff; }
+  .proof-inner { display: grid; grid-template-columns: auto 1fr auto; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+  .proof-rating { text-align: center; }
+  .proof-rating .big { font-family: "Sora", sans-serif; font-weight: 800; font-size: 3.6rem; letter-spacing: -0.04em; line-height: 1; }
+  .proof-rating .stars { color: #ffd257; font-size: 1.15rem; letter-spacing: 2px; margin-top: .4rem; }
+  .proof-rating small { display: block; margin-top: .5rem; color: rgba(255,255,255,.75); font-size: .85rem; }
+  .proof-copy h2 { color: #fff; font-size: var(--fs-h3); font-weight: 600; line-height: 1.3; letter-spacing: -0.02em; }
+  .proof-copy p { margin-top: .6rem; color: rgba(255,255,255,.8); font-size: 1rem; }
+  .proof-vline { width: 1px; align-self: stretch; background: rgba(255,255,255,.2); }
+
+  /* ── Service area ────────────────────────────────────── */
+  .area { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+  .area-map { position: relative; aspect-ratio: 4/3.4; border-radius: var(--radius-lg); overflow: hidden; background:
+      radial-gradient(90% 90% at 30% 20%, #1a9aa2 0%, transparent 55%),
+      linear-gradient(160deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,.1); }
+  .area-map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .pin { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: .25rem; color: #fff; }
+  .pin i { font-size: 1.5rem; color: #8fe07f; filter: drop-shadow(0 2px 5px rgba(0,0,0,.4)); }
+  .pin.hq i { font-size: 2.1rem; color: #fff; }
+  .pin span { font-family: "Sora", sans-serif; font-size: .74rem; font-weight: 600; background: rgba(6,31,38,.6); padding: .12rem .5rem; border-radius: var(--radius-full); backdrop-filter: blur(4px); }
+  .area-towns { list-style: none; padding: 0; margin: 1.7rem 0 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+  .area-towns li { display: inline-flex; align-items: center; gap: .45rem; padding: .5rem 1rem; border-radius: var(--radius-full); background: var(--color-surface); border: 1px solid var(--color-line); font-size: .92rem; font-weight: 500; }
+  .area-towns li i { color: var(--color-accent); font-size: 1rem; }
+
+  /* ── Contact ─────────────────────────────────────────── */
+  .contact { background: var(--color-ink); color: #fff; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+  .contact .eyebrow { color: #7fe0c9; }
+  .contact h2 { color: #fff; font-size: var(--fs-h2); margin-top: 1rem; }
+  .contact-lead { margin-top: 1rem; color: rgba(255,255,255,.8); font-size: 1.1rem; max-width: 34ch; }
+  .contact-details { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1.1rem; }
+  .contact-details a, .contact-details li { display: flex; align-items: center; gap: .9rem; color: #fff; font-size: 1.02rem; }
+  .cd-ico { flex: none; width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); display: grid; place-items: center; color: #8fe07f; font-size: 1.2rem; }
+  .contact-details small { display: block; color: rgba(255,255,255,.55); font-size: .8rem; font-weight: 500; }
+  .contact-social { display: flex; gap: .7rem; margin-top: 1.8rem; }
+  .contact-social a { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); display: grid; place-items: center; color: #fff; font-size: 1.2rem; transition: background .2s, transform .2s; }
+  .contact-social a:hover { background: var(--color-accent); transform: translateY(-2px); }
+
+  form.quote { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-lg); padding: clamp(1.4rem, 3vw, 2.2rem); }
+  .fld { margin-bottom: 1.1rem; }
+  .fld label { display: block; font-family: "Sora", sans-serif; font-size: .85rem; font-weight: 500; margin-bottom: .5rem; color: rgba(255,255,255,.85); }
+  .fld input, .fld select, .fld textarea { width: 100%; padding: .85rem 1rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06); color: #fff; font: inherit; font-size: .98rem; transition: border-color .2s, background .2s; }
+  .fld input::placeholder, .fld textarea::placeholder { color: rgba(255,255,255,.45); }
+  .fld select { color: #fff; }
+  .fld select option { color: #0a2731; }
+  .fld input:focus, .fld select:focus, .fld textarea:focus { outline: none; border-color: #8fe07f; background: rgba(255,255,255,.1); }
+  .fld textarea { resize: vertical; min-height: 96px; }
+  form.quote .btn-primary { width: 100%; justify-content: center; margin-top: .3rem; }
+  .form-note { margin-top: .9rem; font-size: .82rem; color: rgba(255,255,255,.5); text-align: center; }
+
+  /* ── Footer ──────────────────────────────────────────── */
+  footer { background: #061c22; color: rgba(255,255,255,.7); padding-block: 3.2rem 2rem; }
+  .foot-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.4rem; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .foot-brand .brand { color: #fff; margin-bottom: 1rem; }
+  .foot-brand p { font-size: .95rem; max-width: 32ch; line-height: 1.6; }
+  .foot-col h4 { color: #fff; font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 1rem; font-weight: 600; }
+  .foot-col a, .foot-col span { display: block; font-size: .95rem; margin-bottom: .6rem; color: rgba(255,255,255,.7); transition: color .2s; }
+  .foot-col a:hover { color: #8fe07f; }
+  .foot-bot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.8rem; font-size: .85rem; color: rgba(255,255,255,.5); }
+
+  /* ── Grain overlay ───────────────────────────────────── */
+  .grain { position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .028; mix-blend-mode: overlay; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+  /* ── Reveal motion (opt-in: hidden ONLY when we know motion will run,
+        so a blocked CDN / no-JS never leaves content invisible) ──── */
+  html.anim [data-reveal] { opacity: 0; transform: translateY(26px); }
+  /* Hero entrance runs in pure CSS at first paint (never gated on the GSAP
+     script), so above-the-fold content and LCP paint immediately. */
+  @keyframes heroIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  html.anim [data-hero-reveal] { opacity: 0; animation: heroIn .8s var(--ease) forwards; animation-delay: var(--hd, 0s); }
+
+  /* ── Mobile nav panel ────────────────────────────────── */
+  .m-panel { position: fixed; inset: var(--nav-h) 0 auto 0; background: rgba(245,249,250,.97); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-line); padding: 1.2rem clamp(1.1rem,4vw,2rem) 1.6rem; transform: translateY(-120%); transition: transform .4s var(--ease); z-index: 99; box-shadow: var(--shadow-lg); }
+  .m-panel.open { transform: translateY(0); }
+  .m-panel a { display: block; padding: .8rem 0; font-family: "Sora", sans-serif; font-weight: 500; border-bottom: 1px solid var(--color-line); }
+  .m-panel .btn { width: 100%; justify-content: center; margin-top: 1rem; }
+
+  /* ── Responsive ──────────────────────────────────────── */
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-card { display: none; }
+    .hero-sub { max-width: 46ch; }
+    .why, .area, .contact-grid { grid-template-columns: 1fr; }
+    .proof-inner { grid-template-columns: 1fr; text-align: center; gap: 1.5rem; }
+    .proof-vline { display: none; }
+    .svc-grid, .mach-grid { grid-template-columns: repeat(2, 1fr); }
+    .svc-feature, .svc-span3, .svc-span2 { grid-column: span 2; }
+    .steps { grid-template-columns: repeat(2, 1fr); }
+    .foot-top { grid-template-columns: 1fr 1fr; }
+    .foot-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    .nav-links, .nav-phone { display: none; }
+    .nav-toggle { display: grid; place-items: center; }
+    .nav-cta .btn { display: none; }
+    .strip-inner { justify-content: flex-start; }
+  }
+  @media (max-width: 520px) {
+    .svc-grid, .mach-grid, .steps, .stats, .foot-top { grid-template-columns: 1fr; }
+    .svc-feature, .svc-span3, .svc-span2, .mach { grid-column: auto; }
+    .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+    .btn, .card, .mach { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#services">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ═══ NAV ═══ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="TM Plant home">
+      <span class="mark"><i class="ph-fill ph-wrench" aria-hidden="true"></i></span>
+      TM<b>Plant</b>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#machinery">Machinery</a>
+      <a href="#why">Why us</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:07506856080"><i class="ph-fill ph-phone" aria-hidden="true"></i> 07506 856080</a>
+      <a class="btn btn-primary" href="#contact" data-magnetic>Get a quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><i class="ph ph-list" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</header>
+<div class="m-panel" id="mPanel">
+  <a href="#services">Services</a>
+  <a href="#machinery">Machinery</a>
+  <a href="#why">Why us</a>
+  <a href="#areas">Areas</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-primary" href="tel:07506856080"><i class="ph-fill ph-phone"></i> Call 07506 856080</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <svg class="hero-topo" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#8fe07f" stroke-width="1.1" opacity="0.5">
+      <path d="M-50 560 Q 300 470 620 540 T 1260 500"/>
+      <path d="M-50 600 Q 320 510 640 585 T 1260 545"/>
+      <path d="M-50 640 Q 340 560 660 630 T 1260 595"/>
+    </g>
+    <g fill="none" stroke="#2fb0b8" stroke-width="1" opacity="0.4">
+      <path d="M-50 140 Q 260 90 560 150 T 1260 120"/>
+      <path d="M-50 100 Q 280 50 600 110 T 1260 80"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow" data-hero-reveal style="--hd:.05s">Carlisle &amp; across Cumbria</span>
+        <h1 data-hero-reveal style="--hd:.12s">Cumbria's machinery <span class="grn">service &amp; repair</span> centre</h1>
+        <p class="hero-sub" data-hero-reveal style="--hd:.2s">Garden and building machinery kept running. Servicing, repairs, sales and free local collection, all makes and models.</p>
+        <div class="hero-actions" data-hero-reveal style="--hd:.28s">
+          <a class="btn btn-primary" href="#contact" data-magnetic><i class="ph-fill ph-note-pencil"></i> Get a free quote</a>
+          <a class="btn btn-ghost" href="tel:07506856080"><i class="ph-fill ph-phone"></i> 07506 856080</a>
+        </div>
+        <div class="hero-chips" data-hero-reveal style="--hd:.36s">
+          <span class="hero-chip"><i class="ph-fill ph-seal-check"></i> 100% recommended</span>
+          <span class="hero-chip"><i class="ph-fill ph-truck"></i> Free local collection</span>
+          <span class="hero-chip"><i class="ph-fill ph-wrench"></i> All makes serviced</span>
+        </div>
+      </div>
+      <aside class="hero-card" data-hero-reveal style="--hd:.3s" aria-label="Why choose TM Plant">
+        <h3><i class="ph-fill ph-shield-check"></i> Sorted, first time</h3>
+        <ul class="hc-list">
+          <li><i class="ph-fill ph-check-circle"></i> Full servicing &amp; fault diagnosis on site</li>
+          <li><i class="ph-fill ph-check-circle"></i> Collection &amp; delivery across the region</li>
+          <li><i class="ph-fill ph-check-circle"></i> Repairs, parts, blades &amp; sharpening</li>
+          <li><i class="ph-fill ph-check-circle"></i> New &amp; used machinery for sale</li>
+        </ul>
+        <div class="hc-foot">
+          <span class="hc-stars">★★★★★</span>
+          <span>Rated 5.0 by the Cumbria community</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRUST STRIP ═══ -->
+<div class="strip">
+  <div class="wrap strip-inner">
+    <span class="strip-item"><i class="ph-fill ph-map-pin"></i> Denton Holme, Carlisle</span>
+    <span class="strip-item"><i class="ph-fill ph-truck"></i> Collection &amp; delivery</span>
+    <span class="strip-item"><i class="ph-fill ph-gear-six"></i> All makes &amp; models</span>
+    <span class="strip-item"><i class="ph-fill ph-users-three"></i> 1,600+ strong community</span>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">What we do</span>
+      <h2>One workshop for every machine on the job</h2>
+      <p>If it cuts, digs, lifts or clears, we service it, repair it or replace it. Garden kit through to compact building plant.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="card svc-feature" data-reveal>
+        <div>
+          <span class="ico"><i class="ph-fill ph-gear-six"></i></span>
+          <h3>Servicing &amp; maintenance</h3>
+          <p>Scheduled and pre-season servicing that keeps machinery reliable, safe and ready when you need it. Every make, petrol or diesel.</p>
+        </div>
+        <a class="btn btn-primary" href="#contact" style="align-self:flex-start;margin-top:1.6rem" data-magnetic>Book a service</a>
+      </article>
+      <article class="card svc-span3" data-reveal data-reveal-delay="0.06">
+        <span class="ico green"><i class="ph-fill ph-wrench"></i></span>
+        <h3>Repairs &amp; diagnostics</h3>
+        <p>Won't start, cutting out or down on power? We diagnose the fault and get it fixed, from engines to hydraulics.</p>
+      </article>
+      <article class="card svc-span2" data-reveal>
+        <span class="ico teal"><i class="ph-fill ph-truck"></i></span>
+        <h3>Collection &amp; delivery</h3>
+        <p>Free local collection and return, so heavy kit never leaves your yard.</p>
+      </article>
+      <article class="card svc-span2" data-reveal data-reveal-delay="0.06">
+        <span class="ico teal"><i class="ph-fill ph-tag"></i></span>
+        <h3>Sales, new &amp; used</h3>
+        <p>The right machine for the task, with honest advice, not a hard sell.</p>
+      </article>
+      <article class="card svc-span2" data-reveal data-reveal-delay="0.12">
+        <span class="ico green"><i class="ph-fill ph-scissors"></i></span>
+        <h3>Parts, blades &amp; sharpening</h3>
+        <p>Genuine parts, chains, blades and sharpening to a clean edge.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MACHINERY ═══ -->
+<section class="sec mach-band" id="machinery">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>Machinery we look after</h2>
+      <p>All makes and models welcome. If it isn't on the list, ask us anyway.</p>
+    </div>
+    <div class="mach-grid">
+      <div class="mach" data-reveal><i class="m-ico ph-fill ph-tractor"></i><strong>Ride-on mowers</strong><small>Lawn tractors &amp; zero-turns</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.04"><i class="m-ico ph-fill ph-plant"></i><strong>Lawn mowers</strong><small>Petrol, electric &amp; push</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.08"><i class="m-ico ph-fill ph-tree-evergreen"></i><strong>Chainsaws</strong><small>Domestic &amp; professional</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.12"><i class="m-ico ph-fill ph-scissors"></i><strong>Strimmers</strong><small>Brushcutters &amp; trimmers</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.16"><i class="m-ico ph-fill ph-fediverse-logo"></i><strong>Hedge trimmers</strong><small>Handheld &amp; long-reach</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.2"><i class="m-ico ph-fill ph-excavator"></i><strong>Compact plant</strong><small>Mini diggers &amp; loaders</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.04"><i class="m-ico ph-fill ph-drop"></i><strong>Pressure washers</strong><small>Petrol &amp; electric</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.08"><i class="m-ico ph-fill ph-lightning"></i><strong>Generators</strong><small>Site &amp; standby power</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.12"><i class="m-ico ph-fill ph-wind"></i><strong>Leaf blowers</strong><small>Handheld &amp; backpack</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.16"><i class="m-ico ph-fill ph-shovel"></i><strong>Rotavators</strong><small>Tillers &amp; cultivators</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.2"><i class="m-ico ph-fill ph-engine"></i><strong>Small engines</strong><small>2 &amp; 4-stroke rebuilds</small></div>
+      <div class="mach" data-reveal data-reveal-delay="0.24"><i class="m-ico ph-fill ph-question"></i><strong>Something else?</strong><small>Just ask, we most likely can</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head center" data-reveal>
+      <h2>Getting your machine sorted</h2>
+      <p>Four simple steps from broken down to back on the job.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal>
+        <div class="num">01</div><i class="s-ico ph-fill ph-chat-circle-dots"></i>
+        <h3>Get in touch</h3>
+        <p>Call, message or fill in the form. Tell us the machine and the problem.</p>
+      </div>
+      <div class="step" data-reveal data-reveal-delay="0.08">
+        <div class="num">02</div><i class="s-ico ph-fill ph-truck"></i>
+        <h3>We collect</h3>
+        <p>Drop it in, or we collect free from across the local area.</p>
+      </div>
+      <div class="step" data-reveal data-reveal-delay="0.16">
+        <div class="num">03</div><i class="s-ico ph-fill ph-wrench"></i>
+        <h3>Service or repair</h3>
+        <p>We diagnose, quote clearly, then service or fix it properly.</p>
+      </div>
+      <div class="step" data-reveal data-reveal-delay="0.24">
+        <div class="num">04</div><i class="s-ico ph-fill ph-check-circle"></i>
+        <h3>Back to work</h3>
+        <p>Tested, cleaned and returned, running like it should.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY US ═══ -->
+<section class="sec mach-band" id="why">
+  <div class="wrap why">
+    <div data-reveal>
+      <span class="eyebrow">Why TM Plant</span>
+      <h2 class="sec-head" style="margin-bottom:0">Local, trusted and genuinely handy</h2>
+      <ul class="why-list">
+        <li><span class="wi"><i class="ph-fill ph-wrench"></i></span><div><h4>Every make, every model</h4><p>Petrol, diesel, electric, garden or building plant. One team that knows them all.</p></div></li>
+        <li><span class="wi"><i class="ph-fill ph-truck"></i></span><div><h4>Free local collection</h4><p>No trailer, no hassle. We collect and return across Carlisle and the wider county.</p></div></li>
+        <li><span class="wi"><i class="ph-fill ph-clock-countdown"></i></span><div><h4>Fast, honest turnaround</h4><p>Clear quotes up front and machines back quickly, so downtime stays short.</p></div></li>
+        <li><span class="wi"><i class="ph-fill ph-heart"></i></span><div><h4>A proper local reputation</h4><p>100% recommended by a Cumbria community that keeps coming back.</p></div></li>
+      </ul>
+    </div>
+    <div class="stats" data-reveal data-reveal-delay="0.1">
+      <div class="stat"><div class="n" data-count="100" data-suffix="%">0%</div><div class="l">Customers who recommend us</div></div>
+      <div class="stat dark"><div class="n" data-count="1600" data-suffix="+">0</div><div class="l">Strong local community</div></div>
+      <div class="stat"><div class="n" data-count="5" data-suffix="+">0</div><div class="l">Towns covered across Cumbria</div></div>
+      <div class="stat"><div class="n"><b>All</b></div><div class="l">Makes &amp; models serviced</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROOF BAND ═══ -->
+<section class="sec proof">
+  <div class="wrap proof-inner">
+    <div class="proof-rating" data-reveal>
+      <div class="big">5.0</div>
+      <div class="stars">★★★★★</div>
+      <small>6 reviews on Facebook</small>
+    </div>
+    <div class="proof-vline" aria-hidden="true"></div>
+    <div class="proof-copy" data-reveal data-reveal-delay="0.08">
+      <h2>"If you have any garden or building machinery problem, we can provide a solution."</h2>
+      <p>That is the promise, and it is why every customer who has reviewed TM Plant recommends us. Read what the community says, or come and see for yourself.</p>
+    </div>
+    <a class="btn btn-ghost" href="https://www.facebook.com/profile.php?id=100087877317818" target="_blank" rel="noopener" data-reveal><i class="ph-fill ph-facebook-logo"></i> Read reviews</a>
+  </div>
+</section>
+
+<!-- ═══ SERVICE AREA ═══ -->
+<section class="sec" id="areas">
+  <div class="wrap area">
+    <div class="area-map" data-reveal aria-label="TM Plant service area across Cumbria">
+      <svg viewBox="0 0 400 340" aria-hidden="true">
+        <g fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1">
+          <path d="M60 40 Q 160 20 250 60 T 360 90 L 350 300 Q 220 330 120 300 T 40 250 Z"/>
+        </g>
+        <g stroke="rgba(143,224,127,0.5)" stroke-width="1.4" stroke-dasharray="4 6">
+          <line x1="150" y1="150" x2="90" y2="90"/>
+          <line x1="150" y1="150" x2="245" y2="110"/>
+          <line x1="150" y1="150" x2="285" y2="205"/>
+          <line x1="150" y1="150" x2="110" y2="240"/>
+          <line x1="150" y1="150" x2="215" y2="255"/>
+        </g>
+      </svg>
+      <div class="pin hq" style="left:37.5%;top:44%"><i class="ph-fill ph-map-pin"></i><span>Carlisle HQ</span></div>
+      <div class="pin" style="left:22.5%;top:26%"><i class="ph-fill ph-map-pin-simple"></i><span>Dalston</span></div>
+      <div class="pin" style="left:61%;top:32%"><i class="ph-fill ph-map-pin-simple"></i><span>Alston</span></div>
+      <div class="pin" style="left:71%;top:60%"><i class="ph-fill ph-map-pin-simple"></i><span>Penrith</span></div>
+      <div class="pin" style="left:27.5%;top:70%"><i class="ph-fill ph-map-pin-simple"></i><span>Keswick</span></div>
+    </div>
+    <div data-reveal data-reveal-delay="0.08">
+      <span class="eyebrow">Where we work</span>
+      <h2 class="sec-head" style="margin-bottom:0">Covering Carlisle and across Cumbria</h2>
+      <p style="margin-top:1rem;color:var(--color-muted);font-size:1.1rem">Based at Unit 6 Thomas Street in Denton Holme, we collect and deliver right across the region. If you are nearby, we can most likely help.</p>
+      <ul class="area-towns">
+        <li><i class="ph-fill ph-map-pin"></i> Carlisle</li>
+        <li><i class="ph-fill ph-map-pin"></i> Denton Holme</li>
+        <li><i class="ph-fill ph-map-pin"></i> Dalston</li>
+        <li><i class="ph-fill ph-map-pin"></i> Penrith</li>
+        <li><i class="ph-fill ph-map-pin"></i> Keswick</li>
+        <li><i class="ph-fill ph-map-pin"></i> Alston</li>
+        <li><i class="ph-fill ph-map-pin"></i> &amp; across Cumbria</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="sec contact" id="contact">
+  <div class="wrap contact-grid">
+    <div data-reveal>
+      <span class="eyebrow">Get in touch</span>
+      <h2>Tell us what needs sorting</h2>
+      <p class="contact-lead">Call, message on Facebook, or send a quick quote request. We will get straight back to you.</p>
+      <ul class="contact-details">
+        <li><a href="tel:07506856080"><span class="cd-ico"><i class="ph-fill ph-phone"></i></span><span>07506 856080<small>Call or text</small></span></a></li>
+        <li><a href="mailto:tmplantservice@gmail.com"><span class="cd-ico"><i class="ph-fill ph-envelope-simple"></i></span><span>tmplantservice@gmail.com<small>Email us anytime</small></span></a></li>
+        <li><span class="cd-ico"><i class="ph-fill ph-map-pin"></i></span><span>Unit 6 Thomas Street, Denton Holme<small>Carlisle, CA2 5DZ</small></span></li>
+      </ul>
+      <div class="contact-social">
+        <a href="https://www.facebook.com/profile.php?id=100087877317818" target="_blank" rel="noopener" aria-label="TM Plant on Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+        <a href="https://www.instagram.com/tmplantservice" target="_blank" rel="noopener" aria-label="TM Plant on Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+        <a href="tel:07506856080" aria-label="Call TM Plant"><i class="ph-fill ph-phone"></i></a>
+      </div>
+    </div>
+    <form class="quote" action="https://formspree.io/f/your-form-id" method="POST" data-reveal>
+      <div class="fld">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Jo Bloggs" required />
+      </div>
+      <div class="fld">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="07…" required />
+      </div>
+      <div class="fld">
+        <label for="machine">What needs looking at?</label>
+        <select id="machine" name="machine">
+          <option>Service or maintenance</option>
+          <option>Repair or fault</option>
+          <option>Collection &amp; delivery</option>
+          <option>Buying a machine</option>
+          <option>Parts, blades or sharpening</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="fld">
+        <label for="msg">Details</label>
+        <textarea id="msg" name="message" placeholder="Make and model if you know it, and what is happening…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><i class="ph-fill ph-paper-plane-tilt"></i> Send my request</button>
+      <p class="form-note">Prefer to talk? Call 07506 856080. We reply fast.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><span class="mark"><i class="ph-fill ph-wrench"></i></span> TM<b>Plant</b></a>
+        <p>Cumbria's machinery service, repair and sales centre. Garden and building kit kept running, from Carlisle across the county.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#services">Services</a>
+        <a href="#machinery">Machinery</a>
+        <a href="#why">Why us</a>
+        <a href="#areas">Service area</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="tel:07506856080">07506 856080</a>
+        <a href="mailto:tmplantservice@gmail.com">tmplantservice@gmail.com</a>
+        <span>Unit 6 Thomas Street</span>
+        <span>Denton Holme, Carlisle, CA2 5DZ</span>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> TM Plant. All rights reserved.</span>
+      <span>Carlisle · Dalston · Penrith · Keswick · Alston · Cumbria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav scrolled state
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 24);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Mobile menu
+  const toggle = document.getElementById('navToggle');
+  const panel = document.getElementById('mPanel');
+  toggle.addEventListener('click', () => {
+    const open = panel.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.innerHTML = open ? '<i class="ph ph-x"></i>' : '<i class="ph ph-list"></i>';
+  });
+  panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    panel.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.innerHTML = '<i class="ph ph-list"></i>';
+  }));
+
+  // Motion (respect reduced-motion + fail open if GSAP is unavailable)
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const root = document.documentElement;
+  if (reduce || typeof gsap === 'undefined') {
+    root.classList.remove('anim');   // reveal everything, no animation
+  } else {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray('[data-reveal]').forEach(el => {
+      const delay = parseFloat(el.dataset.revealDelay || 0);
+      gsap.to(el, {
+        opacity: 1, y: 0, duration: 0.85, delay, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%' }
+      });
+    });
+
+    // Count-up stats
+    gsap.utils.toArray('[data-count]').forEach(el => {
+      const target = +el.dataset.count;
+      const suffix = el.dataset.suffix || '';
+      ScrollTrigger.create({
+        trigger: el, start: 'top 90%', once: true,
+        onEnter: () => {
+          const obj = { v: 0 };
+          gsap.to(obj, {
+            v: target, duration: 1.6, ease: 'power2.out',
+            onUpdate: () => {
+              const val = Math.round(obj.v);
+              el.textContent = (target >= 1000 ? val.toLocaleString() : val) + suffix;
+            }
+          });
+        }
+      });
+    });
+
+    // Magnetic CTAs
+    gsap.utils.toArray('[data-magnetic]').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        gsap.to(btn, { x: (e.clientX - r.left - r.width / 2) * 0.28, y: (e.clientY - r.top - r.height / 2) * 0.4, duration: 0.4, ease: 'power2.out' });
+      });
+      btn.addEventListener('mouseleave', () => gsap.to(btn, { x: 0, y: 0, duration: 0.5, ease: 'elastic.out(1,0.4)' }));
+    });
+  }
+</script>
+</body>
+</html>

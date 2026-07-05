@@ -1,0 +1,54 @@
+/* tokens.css — TM Plant, Carlisle. Cumbrian teal-blue + plant green.
+   Brand-tint only lives here; components reference var(--*) — never hardcoded hex. */
+:root {
+  /* ── 8-token palette ───────────────────────────────────────────── */
+  --color-primary:        #0C6E7D;  /* Cumbrian teal-blue */
+  --color-primary-dark:   #084C57;
+  --color-primary-light:  #2A93A3;
+  --color-accent:         #4A9E3F;  /* plant green (accents, icons, highlights) */
+  --color-accent-dark:    #3B7F32;
+  --color-cta:            #2E7A33;  /* darker leaf green for buttons: white text = 5.4:1, WCAG AA */
+  --color-cta-dark:       #24632A;
+  --color-bg:             #F5F9FA;  /* cool near-white */
+  --color-surface:        #FFFFFF;
+  --color-surface-2:      #EDF3F4;  /* tinted elevated */
+  --color-ink:            #0A2731;  /* deep slate-teal text */
+  --color-ink-2:          #17323C;  /* dark section base */
+  --color-text:           #1B2E34;
+  --color-muted:          #57707A;
+  --color-line:           #DCE7E9;  /* hairlines */
+
+  /* ── Type scale (clamp, fluid) ─────────────────────────────────── */
+  --fs-display: clamp(2.7rem, 1.6rem + 4.6vw, 5.2rem);
+  --fs-h1:      clamp(2.1rem, 1.4rem + 3vw, 3.6rem);
+  --fs-h2:      clamp(1.7rem, 1.2rem + 2.1vw, 2.7rem);
+  --fs-h3:      clamp(1.25rem, 1.05rem + 0.9vw, 1.6rem);
+  --fs-h4:      1.15rem;
+  --fs-body:    1.0625rem;
+  --fs-small:   0.875rem;
+  --fs-eyebrow: 0.78rem;
+
+  /* ── Spacing (8px rhythm) ──────────────────────────────────────── */
+  --space-1: 0.25rem;  --space-2: 0.5rem;   --space-3: 0.75rem;
+  --space-4: 1rem;     --space-5: 1.5rem;    --space-6: 2rem;
+  --space-7: 3rem;     --space-8: 4rem;      --space-9: 5rem;
+  --space-10: 7rem;    --space-11: 9rem;     --space-12: 11rem;
+
+  /* ── Radius ────────────────────────────────────────────────────── */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  /* ── Shadows (teal-tinted, layered) ────────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(10,39,49,.06), 0 2px 6px rgba(10,39,49,.05);
+  --shadow-md: 0 4px 10px rgba(10,39,49,.07), 0 14px 30px rgba(10,39,49,.09);
+  --shadow-lg: 0 10px 24px rgba(10,39,49,.10), 0 30px 60px rgba(12,110,125,.14);
+  --shadow-accent: 0 10px 26px rgba(74,158,63,.28);
+  --shadow-primary: 0 10px 26px rgba(12,110,125,.30);
+
+  /* ── Layout ────────────────────────────────────────────────────── */
+  --maxw: 1200px;
+  --nav-h: 72px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

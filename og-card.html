@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+<style>
+  @font-face { font-family:"Sora"; src:url("fonts/sora.woff2") format("woff2"); font-weight:100 800; }
+  @font-face { font-family:"Figtree"; src:url("fonts/figtree.woff2") format("woff2"); font-weight:300 900; }
+  *{margin:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;font-family:"Figtree",sans-serif;
+    background:radial-gradient(120% 90% at 82% 8%,#17a0a8 0%,transparent 55%),
+      radial-gradient(90% 80% at 8% 95%,#0a3f49 0%,transparent 60%),
+      linear-gradient(158deg,#0d5c69 0%,#08323b 62%,#061f26 100%);
+    color:#fff;position:relative}
+  svg.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+  .pad{position:relative;padding:78px 88px;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+  .top{display:flex;align-items:center;gap:18px}
+  .mark{width:74px;height:74px;border-radius:20px;display:grid;place-items:center;
+    background:linear-gradient(150deg,#2A93A3,#084C57);box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+  .mark svg{width:40px;height:40px;fill:#fff}
+  .brand{font-family:"Sora";font-weight:800;font-size:40px;letter-spacing:-.03em}
+  .brand b{color:#8fe07f}
+  .eyebrow{font-family:"Sora";font-weight:600;font-size:20px;letter-spacing:.18em;text-transform:uppercase;color:#7fe0c9;display:flex;align-items:center;gap:14px}
+  .eyebrow::before{content:"";width:44px;height:3px;background:#4A9E3F;border-radius:3px}
+  h1{font-family:"Sora";font-weight:800;font-size:82px;line-height:1.02;letter-spacing:-.035em;margin:22px 0 0}
+  h1 .g{color:#8fe07f}
+  .row{display:flex;gap:34px;align-items:center;font-family:"Sora";font-weight:600;font-size:23px;color:rgba(255,255,255,.92)}
+  .row .chip{display:flex;align-items:center;gap:11px}
+  .dot{width:12px;height:12px;border-radius:50%;background:#8fe07f}
+  .phone{margin-left:auto;background:#2E7A33;padding:16px 30px;border-radius:999px;font-size:24px}
+</style></head>
+<body>
+<svg class="topo" viewBox="0 0 1200 630" preserveAspectRatio="none">
+  <g fill="none" stroke="#8fe07f" stroke-width="1.6" opacity=".5">
+    <path d="M-50 500 Q 300 420 620 485 T 1260 445"/>
+    <path d="M-50 540 Q 320 460 640 525 T 1260 490"/>
+    <path d="M-50 580 Q 340 505 660 570 T 1260 535"/>
+  </g>
+  <g fill="none" stroke="#2fb0b8" stroke-width="1.4" opacity=".4">
+    <path d="M-50 120 Q 260 70 560 130 T 1260 100"/>
+    <path d="M-50 82 Q 280 34 600 92 T 1260 62"/>
+  </g>
+</svg>
+<div class="pad">
+  <div class="top">
+    <div class="mark"><svg viewBox="0 0 256 256"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,184,29.24,72,72,0,0,0,88,96a72.34,72.34,0,0,0,6,28.94L33.79,177.79a32,32,0,0,0,45.42,45.42L132.06,163A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,212a16,16,0,0,1-22.7-22.7l65.9-56.13A8,8,0,0,0,112,123.29a56,56,0,0,1,58.16-90l-29.78,32.3a8,8,0,0,0-1.94,7.35l6,28a8,8,0,0,0,6.15,6.15l28,6a8,8,0,0,0,7.35-1.94l32.3-29.78A56.09,56.09,0,0,1,160,152Z"/></svg></div>
+    <div class="brand">TM<b>Plant</b></div>
+  </div>
+  <div>
+    <div class="eyebrow">Carlisle &amp; across Cumbria</div>
+    <h1>Machinery <span class="g">service &amp;<br/>repair</span> centre</h1>
+  </div>
+  <div class="row">
+    <span class="chip"><span class="dot"></span> Servicing &amp; repairs</span>
+    <span class="chip"><span class="dot"></span> Free local collection</span>
+    <span class="phone">07506 856080</span>
+  </div>
+</div>
+</body></html>

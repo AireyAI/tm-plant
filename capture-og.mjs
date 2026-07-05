@@ -1,0 +1,10 @@
+import puppeteer from 'puppeteer';
+const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+const page = await browser.newPage();
+await page.setViewport({ width: 1200, height: 630, deviceScaleFactor: 1 });
+await page.goto('http://localhost:3244/og-card.html', { waitUntil: 'networkidle2' });
+await page.evaluate(() => document.fonts.ready);
+await new Promise(r => setTimeout(r, 400));
+await page.screenshot({ path: './og-image.jpg', type: 'jpeg', quality: 88 });
+console.log('saved og-image.jpg');
+await browser.close();

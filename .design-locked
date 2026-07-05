@@ -1,0 +1,39 @@
+# Design lock — TM Plant, Carlisle
+
+Locked: 2026-07-05
+Build type: pitch / preview site (sandbox under ~/Websites, lenient completeness)
+
+## Business
+TM Plant — "Cumbria's leading plant service & repair centre".
+Garden & building machinery: service, repair, collection/delivery, sales.
+Unit 6 Thomas Street, Denton Holme, Carlisle, CA2 5DZ.
+Serves Carlisle, Denton Holme, Dalston, Penrith, Keswick, Alston & across Cumbria.
+Phone 07506 856080 · tmplantservice@gmail.com · IG @tmplantservice · FB 1.6K followers, 100% recommend (6 reviews).
+
+## Design read
+Local-trade service landing for Cumbrian homeowners, farmers, landscapers & builders
+who need machinery serviced/repaired/bought. Language: clean, trustworthy, Cumbrian-outdoors.
+
+## System pick — bespoke, composed from design-systems patterns
+Neither flagship template fits cleanly: `trade-brutalist` has the exact local-trade
+architecture but a brutalist skin that clashes with TM Plant's friendly blue/teal/green
+brand; `saas-stripe` has the right professional skin but SaaS content shape. Composed a
+clean bespoke build using the design-systems patterns + GSAP motion (one-line justification
+per the reskin-first rule). Motion lifted, not re-implemented.
+
+## Brand tokens (from logo + van livery + Cumbria identity)
+- primary  #0C6E7D  Cumbrian teal-blue (logo "TM", lake tones)
+- accent   #4A9E3F  plant green (logo "Plant", garden machinery)  — single accent, brand-justified
+- ink      #0A2731  deep slate-teal (text + dark sections)
+- bg       #F5F9FA  cool near-white
+
+## Dials
+DESIGN_VARIANCE 6 · MOTION_INTENSITY 5 · VISUAL_DENSITY 4
+
+## Notes / pending (surfaced to Kyle)
+- Image gen unavailable this session (nano-banana-2 quota 0, Higgsfield needs auth). Site is
+  built image-light-but-premium (brand gradients + topographic SVG + Phosphor icons + type),
+  with graceful photo slots. SWAP IN real TM Plant van/machinery/job photos from Facebook.
+- Testimonials: only the real aggregate is known (100% recommend, 6 FB reviews) — shown as a
+  proof band + link, NO invented quotes. Pull the 6 real review texts to add quote cards.
+- Confirm opening hours, quote-form endpoint (Formspree), real domain before deploy.
